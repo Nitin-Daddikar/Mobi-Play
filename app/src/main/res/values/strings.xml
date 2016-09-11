@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mobi Play</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="server_client_id">1021528595382-9o303f5ij6gl9gbh4jrkmlauok7550j8.apps.googleusercontent.com</string>
+    <string name="description">Media Controls</string>
+    <string name="action_settings">Settings</string>
+    <string name="tep">
+AIzaSyAn7c5QssmT0JrPhD_ybT0MIemFUhZ2Slk
+        1030720257999</string>
+    <string name="facebook_app_id">247892815570775</string>
+
+    <string-array name="video_quality">
+        <item>Auto</item>
+        <item>98p</item>
+        <item>360p</item>
+        <item>720p</item>
+    </string-array>
+
+</resources>

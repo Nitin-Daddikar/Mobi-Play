@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.scripton.in.test"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.0'
+    //yo yo library view animations
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.easing:library:1.0.1@aar'
+    compile 'com.daimajia.androidanimations:library:1.1.3@aar'
+    //easy android animations
+    compile 'com.github.2359media:EasyAndroidAnimations:0.8'
+    // database connection
+    compile 'com.mcxiaoke.volley:library:1.0.17'
+    ///multiple fab options
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    //sweet dialog popup
+    compile 'cn.pedant.sweetalert:library:1.3'
+    //load toast
+    compile 'net.steamcrafted:load-toast:1.0.10'
+    // for google plus
+    compile 'com.google.android.gms:play-services:9.0.0'
+    //CustomShapeImageView
+    compile 'com.mostafagazar:customshapeimageview:1.0.4'
+    //for image load
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    // material dailog
+    compile 'com.afollestad.material-dialogs:core:0.8.5.9'
+    // progress loading
+    compile 'com.kaopiz:kprogresshud:1.0.5'
+    //gif loading pregress
+    compile 'com.roger.gifloadinglibrary:gifloadinglibrary:1.0.0'
+    //FCM
+    compile 'com.google.firebase:firebase-messaging:9.0.2'
+    //licence dialog
+    compile('de.psdev.licensesdialog:licensesdialog:1.8.1')
+    //menu from bottom
+    compile 'com.cocosw:bottomsheet:1.+@aar'
+    //material date picker
+    compile 'com.wdullaer:materialdatetimepicker:2.1.1'
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    compile files('libs/android-viewbadger.jar')
+    compile files('libs/commons-email-1.4.jar')
+    compile files('libs/mina-core-2.0.7.jar')
+    compile files('libs/red5streaming.jar')
+}

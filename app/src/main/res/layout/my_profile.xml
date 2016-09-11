@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="right">
+                        <com.meg7.widget.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/user"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="10dp"
+                            android:id="@+id/iv_pro_pic"
+                            android:onClick="changeProfilePic"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="First name"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="15dp" >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/user" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="First name"
+                                android:ems="10"
+                                android:inputType="textEmailAddress"
+                                android:layout_marginLeft="30dp"
+                                android:textColor="#fff"
+                                android:textColorHint="#fff"
+                                android:layout_marginRight="80dp"
+                                android:textSize="14dp"
+                                android:id="@+id/et_first_name" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Last name"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="15dp" >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/user" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="Last Name"
+                                android:ems="10"
+                                android:inputType="textEmailAddress"
+                                android:layout_marginLeft="30dp"
+                                android:textColor="#fff"
+                                android:textColorHint="#fff"
+                                android:layout_marginRight="80dp"
+                                android:textSize="14dp"
+                                android:id="@+id/et_last_name" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Date of birth"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="15dp" >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/calendar" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Date of birth"
+                                android:ems="10"
+                                android:text="Date of birth"
+                                android:layout_marginLeft="30dp"
+                                android:textColor="#fff"
+                                android:layout_marginRight="80dp"
+                                android:textSize="14dp"
+                                android:onClick="select_date"
+                                android:id="@+id/tv_dob" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp" >
+
+                            <Button
+                                android:layout_width="120dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/update"
+                                android:onClick="update"
+                                android:layout_marginLeft="65dp" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/btn_change_pass"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/pass"
+                            android:visibility="gone"
+                            android:onClick="change_pass" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|right">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+
+                    fab:fab_icon="@drawable/back_btn"
+                    android:id="@+id/fab_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/yellow"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginBottom="16dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

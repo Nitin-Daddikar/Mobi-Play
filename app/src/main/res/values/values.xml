@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="domain">149.56.96.196</string>
+    <string name="context">live</string>
+    <integer name="port">8554</integer>
+    <string name="stream1">reddemo</string>
+    <string name="stream2">reddemo</string>
+    <integer name="bitrate">768</integer>
+    <integer name="highBitrate">768</integer>
+    <bool name="debugView">true</bool>
+</resources>

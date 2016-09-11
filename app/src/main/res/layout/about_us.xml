@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:gravity="center|top"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageView"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mobi Play is a premium content destination"
+                android:textColor="#000"
+                android:typeface="serif"
+                android:textStyle="italic"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="from ABC"
+                android:textColor="#000"
+                android:typeface="serif"
+                android:textStyle="italic"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:typeface="serif"
+                android:textStyle="italic"
+                android:textSize="18dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="It hosts all of yoga videos and Mobi Play believes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="its audience will enjoy watching"
+                android:id="@+id/textView7"
+                android:textColor="#fff"
+                android:typeface="serif"
+                android:textStyle="italic"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="TERMS AND CONDITIONS"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold|italic"
+                android:textSize="20dp"
+                android:onClick="termsNconditions"
+                android:textColor="#dfac0e" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="PRIVACY AND POLICY"
+
+                android:textStyle="bold|italic"
+                android:textSize="20dp"
+                android:layout_marginTop="2dp"
+                android:onClick="privacyNpolicy"
+                android:textColor="#dfac0e" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+
+            fab:fab_icon="@drawable/back_btn"
+            android:id="@+id/fab_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/yellow"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+
+</FrameLayout>

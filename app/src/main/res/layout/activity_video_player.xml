@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/videoSurfaceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <SurfaceView
+                android:id="@+id/videoSurface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:onClick="menu_lay_click"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="right|top"
+                android:orientation="horizontal">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_gallery"
+                    fab:fab_colorNormal="@color/yellow"
+                    fab:fab_icon="@drawable/home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+
+                    android:id="@+id/fab_settings"
+                    fab:fab_colorNormal="@color/yellow"
+                    fab:fab_icon="@drawable/settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+
+                    android:id="@+id/fab_logout"
+                    fab:fab_colorNormal="@color/yellow"
+                    fab:fab_icon="@drawable/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="right|center"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:orientation="vertical">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+
+                    android:id="@+id/fab_like"
+                    fab:fab_colorNormal="@color/yellow"
+                    fab:fab_icon="@drawable/like"
+                    fab:fab_size="mini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+
+                    android:id="@+id/fab_comment"
+                    fab:fab_colorNormal="@color/yellow"
+                    fab:fab_icon="@drawable/comments"
+                    fab:fab_size="mini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_back"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="right|bottom"
+                android:layout_weight="1"
+                android:gravity="right|bottom"
+                android:orientation="vertical">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+
+                    android:id="@+id/fab_back"
+                    fab:fab_colorNormal="@color/yellow"
+                    fab:fab_icon="@drawable/back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:gravity="right|bottom" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
